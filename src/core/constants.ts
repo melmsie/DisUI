@@ -1,6 +1,7 @@
-export const DisUISymbol = '~internal' as const;
+export const DisUISymbol = '~internal-disui' as const;
 
 export const DisUIComponentType = {
+  UI: -2,
   Fragment: -1,
   Row: 1,
   Button: 2,
