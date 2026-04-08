@@ -59,7 +59,7 @@ function render(
     const data = component[DisUISymbol];
     const r = data.render({ stack, context });
 
-    if (data.type === DisUIComponentType.Fragment) {
+    if (data.type === DisUIComponentType.Fragment || data.type === DisUIComponentType.UI) {
       payload.push(...(r.components as APIMessageComponent[]));
       continue;
     }
