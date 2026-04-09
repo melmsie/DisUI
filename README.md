@@ -5,7 +5,7 @@ A library for building UIs inside of Discord.
 ## Basic Usage
 
 ```ts
-import { ui, container, text, divider, row, button, emoji } from 'disui';
+import { ui, container, text, divider, row, button, emoji, resolveDisUI } from 'disui';
 
 const message = ui(
   container(
@@ -17,6 +17,7 @@ const message = ui(
     )
   ).color('#FFF')
 );
+const resolved = resolveDisUI(message)
 // => { components: APIMessageComponent[], flags: 32768 }
 ```
 
